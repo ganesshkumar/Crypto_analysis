@@ -133,7 +133,6 @@ class analysis:
     #supported_list = ["ADA","ATOM","BTT","DASH","DOGE","EOS","ETC","ICX","IOTA","NEO","OMG","ONT","QTUM","TRX","VET","XLM","XMR"]        
     @st.cache
     def save_file(self, final_list):
-        
         with open("supported_coin_list.txt", "w") as file:
             for coin in final_list:
                 file.writelines(coin+'\n')
