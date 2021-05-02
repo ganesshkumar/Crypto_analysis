@@ -1,25 +1,3 @@
-"""
-        Stage 0: get a list of lastest active coins in the market
-        Stage 1: MA analysis that they have been > 0 the last 1 hour , 24 hours and 7 days and output:
-            strong_buy
-            buy
-            sell
-            strong_sel
-        Stage 2: OSC analysis on the "strong_buy list" that we got from the analysis in earlier stage and generate: 
-            recommanded_list
-        
-        stage 1,2 can be done on different intervel of times:
-            1 minute
-            5 minutes
-            15 minutes
-            1 hour
-            4 hours
-            1 day
-            1 week
-            1 month
-        Stage 3: save the generated Coin_list
-        """
-
 import os
 import time
 from datetime import datetime
@@ -58,7 +36,7 @@ class analysis:
         }
         headers = {
         'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': '',
+            'X-CMC_PRO_API_KEY': '23958fbd-8c7e-4ecf-86db-caca0a910906',
         }
 
         session = Session()
@@ -84,7 +62,7 @@ class analysis:
         except (ConnectionError, Timeout, TooManyRedirects) as e:
             return e
 
-    #@st.cache
+    @st.cache
     def get_analysis_mma(self,tick,interval):
         try:
             ticker_summery = TA_Handler(
@@ -99,7 +77,7 @@ class analysis:
         except:
             pass
 
-    #@st.cache
+    @st.cache
     def get_analysis_osc(self,tick,interval):
         try:
             ticker_summery = TA_Handler(
@@ -248,17 +226,17 @@ class analysis:
         option = st.sidebar.radio("", (
             "Strong buy list",
             "Buy list","Recommanded list"))
-        bt = st.sidebar.button("overwrite")
+        bt = st.sidebar.button("save")
 
         if bt:
             if option=="Strong buy list":
-                save_file(self.strong_buy)
+                self.save_file(self.strong_buy)
             if option=="Buy list":
-                save_file(self.buy)
-            st.sidebar.success("Done overwriting List to BBot")
+                self.save_file(self.buy)
             if option == "Recommanded list":
-                save_file(self.recommanded_crypto)
-
+                self.save_file(self.recommanded_crypto)
+            dirname=os.path.dirname()
+            st.sidebar.success(dirname)
 def main():
     crypto_analysis= analysis()
     crypto_analysis.do_job()
