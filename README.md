@@ -20,3 +20,5 @@ pip install -r requirements.txt
 
 3- run the program
 streamlit run main.py
+
+![image](https://user-images.githubusercontent.com/17545900/116814244-2c155780-ab58-11eb-8b80-6d2b73bd27d8.png)
