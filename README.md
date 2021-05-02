@@ -32,8 +32,8 @@ pip install -r requirements.txt
         url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
         parameters = {
         'start':'1',
-        'limit':'100',
-        'convert':'USDT'
+        'limit':'100', # how many coins to analysis : first 100
+        'convert':'USDT' #change the bridge to see other values like BUSD
         }
         headers = {
         'Accepts': 'application/json',

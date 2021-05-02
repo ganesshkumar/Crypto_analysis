@@ -36,7 +36,7 @@ class analysis:
         }
         headers = {
         'Accepts': 'application/json',
-            'X-CMC_PRO_API_KEY': '23958fbd-8c7e-4ecf-86db-caca0a910906',
+            'X-CMC_PRO_API_KEY': '',
         }
 
         session = Session()
