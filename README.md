@@ -15,7 +15,7 @@ pip install -r requirements.txt
         }
         headers = {
         'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': 'add you key in here',   
+        'X-CMC_PRO_API_KEY': 'add your key in here',   
         }
 
 3- run the program
