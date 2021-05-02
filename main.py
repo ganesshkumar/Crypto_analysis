@@ -235,8 +235,9 @@ class analysis:
                 self.save_file(self.buy)
             if option == "Recommanded list":
                 self.save_file(self.recommanded_crypto)
-            dirname=os.path.dirname()
-            st.sidebar.success(dirname)
+            directory_path = os.getcwd()
+            st.sidebar.success(
+                f"file [supported_coin_list.txt]\nfile_path: {directory_path}")
 def main():
     crypto_analysis= analysis()
     crypto_analysis.do_job()
