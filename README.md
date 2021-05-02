@@ -17,5 +17,6 @@ pip install -r requirements.txt
         'Accepts': 'application/json',
         'X-CMC_PRO_API_KEY': 'add you key in here',   
         }
+
 3- run the program
 streamlit run main.py
