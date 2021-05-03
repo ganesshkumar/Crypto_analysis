@@ -30,12 +30,12 @@ class analysis:
         url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
         parameters = {
         'start':'1',
-        'limit':'100',
-        'convert':'USDT'
+        'limit':'100', # 100 i think is the best depending on the time analysis
+        'convert':'USDT'#bridge coin (btcusdt) u can change it to BUSD or any bridge
         }
         headers = {
         'Accepts': 'application/json',
-            'X-CMC_PRO_API_KEY': '',
+            'X-CMC_PRO_API_KEY': '', # add you key in here
         }
 
         session = Session()
