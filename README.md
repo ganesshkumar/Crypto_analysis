@@ -1,8 +1,10 @@
 # Crypto_analysis
-Discription:
+# Discription:
 simple streamlit(screener) app to make MMA and OSC analysis for cyrpto-currenices, and gives resaults for which coins are best to buy or sell depending on the interval you using.
 
-more about tradingview : https://pypi.org/project/tradingview-ta/
+# more about tradingview : https://pypi.org/project/tradingview-ta/
+        
+        
         Stage 0: 
                 get a list of lastest active coins in the market (coinmarketcap)
         Stage 1: 
@@ -26,7 +28,7 @@ more about tradingview : https://pypi.org/project/tradingview-ta/
             1 month
         Stage 3: save the generated Coin_list
 
-setup:
+# setup:
         1- install requierments:
                 pip install -r requirements.txt
 
