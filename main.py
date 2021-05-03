@@ -35,7 +35,7 @@ class analysis:
         }
         headers = {
         'Accepts': 'application/json',
-            'X-CMC_PRO_API_KEY': '23958fbd-8c7e-4ecf-86db-caca0a910906',
+            'X-CMC_PRO_API_KEY': '',
         }
 
         session = Session()
@@ -61,7 +61,7 @@ class analysis:
         except (ConnectionError, Timeout, TooManyRedirects) as e:
             return e
 
-    @st.cache
+    #@st.cache
     def get_analysis_mma(self,tick,interval):
         try:
             ticker_summery = TA_Handler(
@@ -76,7 +76,7 @@ class analysis:
         except:
             pass
 
-    @st.cache()
+    #@st.cache()
     def get_analysis_osc(self,tick,interval):
         try:
             ticker_summery = TA_Handler(
@@ -107,7 +107,7 @@ class analysis:
         
 
     #supported_list = ["ADA","ATOM","BTT","DASH","DOGE","EOS","ETC","ICX","IOTA","NEO","OMG","ONT","QTUM","TRX","VET","XLM","XMR"]        
-    @st.cache
+    #@st.cache
     def save_file(self, final_list):
         with open("supported_coin_list.txt", "w") as file:
             for coin in final_list:
