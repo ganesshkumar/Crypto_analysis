@@ -7,7 +7,6 @@ from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 from requests import Request, Session
 
 import streamlit as st
-from coinmarketcapapi import CoinMarketCapAPI, CoinMarketCapAPIError
 from tradingview_ta import TA_Handler, Interval, Exchange
 
 # Use the full page instead of a narrow central column
@@ -36,7 +35,7 @@ class analysis:
         }
         headers = {
         'Accepts': 'application/json',
-            'X-CMC_PRO_API_KEY': '',
+            'X-CMC_PRO_API_KEY': '23958fbd-8c7e-4ecf-86db-caca0a910906',
         }
 
         session = Session()
@@ -77,7 +76,7 @@ class analysis:
         except:
             pass
 
-    @st.cache
+    @st.cache()
     def get_analysis_osc(self,tick,interval):
         try:
             ticker_summery = TA_Handler(
@@ -131,7 +130,6 @@ class analysis:
         t0=time.time()
         my_bar = st.progress(0)
         
-        df = pd.DataFrame.from_dict(self.crypto_changes, orient="index")
         filtered_coins = [coin for coin in self.crypto_changes.keys() if self.crypto_changes[coin][0] and self.crypto_changes[coin][1] and self.crypto_changes[coin][2] > 0]
         percent_complete = 0
         
@@ -221,7 +219,7 @@ class analysis:
             col2.table(self.buy)
             col3.table(self.sell)
 
-        st.sidebar.subheader("Overwrite BBot coin list")
+        st.sidebar.subheader("Overwrite [supported_coin_list.txt] coin list")
         option = st.sidebar.radio("", (
             "Strong buy list",
             "Buy list","Recommanded list"))
