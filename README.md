@@ -24,29 +24,29 @@ more about tradingview : https://pypi.org/project/tradingview-ta/
         Stage 3: save the generated Coin_list
 
 setup:
-1- install requierments:
-pip install -r requirements.txt
+        1- install requierments:
+                pip install -r requirements.txt
 
-2- coinmarketcap API-key
-![image](https://user-images.githubusercontent.com/17545900/116851923-a6df8080-abf3-11eb-9ad2-66b6aa6e3667.png)
+        2- coinmarketcap API-key
+                ![image](https://user-images.githubusercontent.com/17545900/116851923-a6df8080-abf3-11eb-9ad2-66b6aa6e3667.png)
 
-docs: https://coinmarketcap.com/api/documentation/v1/
+                docs: https://coinmarketcap.com/api/documentation/v1/
 
-paste your key in main.py -> :
+                paste your key in main.py -> :
 
- def get_marketCap(self):
-        url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
-        parameters = {
-        'start':'1',
-        'limit':'100', # how many coins to analysis : first 100
-        'convert':'USDT' #change the bridge to see other values like BUSD
-        }
-        headers = {
-        'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': 'add your key in here',   
-        }
+         def get_marketCap(self):
+                url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
+                parameters = {
+                'start':'1',
+                'limit':'100', # how many coins to analysis : first 100
+                'convert':'USDT' #change the bridge to see other values like BUSD
+                }
+                headers = {
+                'Accepts': 'application/json',
+                'X-CMC_PRO_API_KEY': 'add your key in here',   
+                }
 
-3- run the program
-streamlit run main.py
+        3- run the program
+                streamlit run main.py
 
-![image](https://user-images.githubusercontent.com/17545900/116814244-2c155780-ab58-11eb-8b80-6d2b73bd27d8.png)
+                ![image](https://user-images.githubusercontent.com/17545900/116814244-2c155780-ab58-11eb-8b80-6d2b73bd27d8.png)
