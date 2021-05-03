@@ -1,6 +1,6 @@
 # Crypto_analysis
 Discription:
-simple streamlit app to make MMA and OSC analysis for cyrpto-currenices, and gives resaults for which coins are best to buy or sell depending on the interval you using.
+simple streamlit(screener) app to make MMA and OSC analysis for cyrpto-currenices, and gives resaults for which coins are best to buy or sell depending on the interval you using.
 
 
         Stage 0: get a list of lastest active coins in the market
@@ -8,11 +8,11 @@ simple streamlit app to make MMA and OSC analysis for cyrpto-currenices, and giv
             strong_buy
             buy
             sell
-            strong_sel
+            strong_sell
         Stage 2: OSC analysis on the "strong_buy list" that we got from the analysis in earlier stage and generate: 
             recommanded_list
         
-        stage 1,2 can be done on different intervel of times:
+        stage 1,2 can be done on different intervels of time:
             1 minute
             5 minutes
             15 minutes
@@ -28,6 +28,12 @@ setup:
 pip install -r requirements.txt
 
 2- coinmarketcap API-key
+![image](https://user-images.githubusercontent.com/17545900/116851923-a6df8080-abf3-11eb-9ad2-66b6aa6e3667.png)
+
+docs: https://coinmarketcap.com/api/documentation/v1/
+
+paste you key in main.py:
+
  def get_marketCap(self):
         url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
         parameters = {
