@@ -105,8 +105,7 @@ class analysis:
                 self.strong_sell.append(i.replace("USDT", ""))
         if self.strong_buy and self.strong_sell is not None:
             return self.buy, self.sell, self.strong_buy, self.strong_sell
-        else:
-            return self.buy, self.sell
+        
 
     #supported_list = ["ADA","ATOM","BTT","DASH","DOGE","EOS","ETC","ICX","IOTA","NEO","OMG","ONT","QTUM","TRX","VET","XLM","XMR"]        
     @st.cache
