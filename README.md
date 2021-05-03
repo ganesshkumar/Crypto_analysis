@@ -18,16 +18,18 @@ simple streamlit(screener) app to make MMA and OSC analysis for cyrpto-currenice
     OSC analysis on the "strong_buy list" that we got from the analysis in earlier stage and generate: 
 - recommanded_list
         
-        Stage 1,2 can be done in different time intervals:
-            1 minute
-            5 minutes
-            15 minutes
-            1 hour
-            4 hours
-            1 day
-            1 week
-            1 month
-        Stage 3: save the generated Coin_list
+Stage 1 and 2 can be done in different time intervals:
+- 1 minute
+- 5 minutes
+- 15 minutes
+- 1 hour
+- 4 hours
+- 1 day
+- 1 week
+- 1 month
+
+**Stage 3:** 
+    save the generated Coin_list
 
 ## Setup:
 1.install requierments:
