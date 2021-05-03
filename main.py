@@ -35,7 +35,7 @@ class analysis:
         }
         headers = {
         'Accepts': 'application/json',
-            'X-CMC_PRO_API_KEY': '', # add you key in here
+            'X-CMC_PRO_API_KEY': os.environ['X-CMC_PRO_API_KEY']
         }
 
         session = Session()
