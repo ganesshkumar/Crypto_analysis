@@ -37,19 +37,7 @@ simple streamlit(screener) app to make MMA and OSC analysis for cyrpto-currenice
 
                 docs: https://coinmarketcap.com/api/documentation/v1/
 
-                paste your key in main.py -> :
-
-         def get_marketCap(self):
-                url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
-                parameters = {
-                'start':'1',
-                'limit':'100', # how many coins to analysis : first 100
-                'convert':'USDT' #change the bridge to see other values like BUSD
-                }
-                headers = {
-                'Accepts': 'application/json',
-                'X-CMC_PRO_API_KEY': 'add your key in here',   
-                }
+                set your key as an environment variable with key X-CMC_PRO_API_KEY
 
         3- run the program
                 streamlit run main.py
