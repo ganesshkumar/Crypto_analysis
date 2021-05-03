@@ -3,16 +3,19 @@ Discription:
 simple streamlit(screener) app to make MMA and OSC analysis for cyrpto-currenices, and gives resaults for which coins are best to buy or sell depending on the interval you using.
 
 more about tradingview : https://pypi.org/project/tradingview-ta/
-        Stage 0: get a list of lastest active coins in the market (coinmarketcap)
-        Stage 1: (tradingView analysis)MA analysis that they have been > 0 the last 1 hour , 24 hours and 7 days and output:
-            strong_buy
-            buy
-            sell
-            strong_sell
-        Stage 2: OSC analysis on the "strong_buy list" that we got from the analysis in earlier stage and generate: 
-            recommanded_list
+        Stage 0: 
+                get a list of lastest active coins in the market (coinmarketcap)
+        Stage 1: 
+                (tradingView analysis)MA analysis that they have been > 0 the last 1 hour , 24 hours and 7 days and output:
+                    strong_buy
+                    buy
+                    sell
+                    strong_sell
+        Stage 2: 
+                OSC analysis on the "strong_buy list" that we got from the analysis in earlier stage and generate: 
+                        recommanded_list
         
-        stage 1,2 can be done on different intervels of time:
+        Stage 1,2 can be done in different time intervals:
             1 minute
             5 minutes
             15 minutes
