@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 docs: https://coinmarketcap.com/api/documentation/v1/
 
-paste you key in main.py:
+paste your key in main.py -> :
 
  def get_marketCap(self):
         url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
