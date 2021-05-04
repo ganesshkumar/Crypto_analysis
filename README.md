@@ -33,7 +33,7 @@ simple streamlit(screener) app to make MMA and OSC analysis for cyrpto-currenice
                 pip install -r requirements.txt
 
         2- coinmarketcap API-key
-                ![image](https://user-images.githubusercontent.com/17545900/116851923-a6df8080-abf3-11eb-9ad2-66b6aa6e3667.png)
+![image](https://user-images.githubusercontent.com/17545900/116851923-a6df8080-abf3-11eb-9ad2-66b6aa6e3667.png)
 
                 docs: https://coinmarketcap.com/api/documentation/v1/
 
@@ -54,4 +54,4 @@ simple streamlit(screener) app to make MMA and OSC analysis for cyrpto-currenice
         3- run the program
                 streamlit run main.py
 
-                ![image](https://user-images.githubusercontent.com/17545900/116814244-2c155780-ab58-11eb-8b80-6d2b73bd27d8.png)
+![image](https://user-images.githubusercontent.com/17545900/116814244-2c155780-ab58-11eb-8b80-6d2b73bd27d8.png)
